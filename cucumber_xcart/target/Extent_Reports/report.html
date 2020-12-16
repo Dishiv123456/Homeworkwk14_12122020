@@ -38,8 +38,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+							<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Dec 13, 2020 10:56:33 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 16, 2020 04:47:32 PM</span>
 				</a>
 			</li>
 			<li>
@@ -86,16 +85,6 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-					<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Smoke</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -154,7 +143,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -169,7 +158,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>18</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -189,18 +178,15 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>EndToEnd feature</span>
-						<span class='test-time'>Dec 13, 2020 10:56:33 PM</span>
+						<span class='test-time'>Dec 16, 2020 04:47:32 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Smoke</span>
-	</div>
-	<span class='duration right label'>0h 0m 15s+605ms</span>
+	<span class='duration right label'>0h 0m 14s+614ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">as a user i should be able to purchase successfully</span>
+		<span class="desc-text">as user i want create Account Successfully</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -211,12 +197,12 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node then pass' status='pass'>
+		<li test-id='4' class='node when pass' status='pass'>
 			
-			<b>Then</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">Then i click on new tab</span>
-				<div class='pre'>Clicking on new tab[[ChromeDriver: chrome on WINDOWS (6472674abe2a5d15a116f2fdc6f587e8)] -> xpath: //*[@id="header-area"]/div[1]/div/div[4]/div/ul/li[4]/a/span]<br></div>
+			<span class="bdd-step-name">When i click on sign in link</span>
+				<div class='pre'>Clicking on sign up link[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //body/div[@id='mm-0']/div[@id='page-wrapper']/div[@id='page']/div[@id='header-area']/div[1]/div[1]/div[2]/div[3]/button[1]/span[1]]<br></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -224,8 +210,8 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And i navigate to new arrivals page</span>
-				<div class='pre'>Get text from new arraivals tab[[ChromeDriver: chrome on WINDOWS (6472674abe2a5d15a116f2fdc6f587e8)] -> xpath: //h1[@id='page-title']]<br></div>
+			<span class="bdd-step-name">And i click on new account tab</span>
+				<div class='pre'>Clicking on new Account tab[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //tbody/tr[4]/td[1]/a[1]]<br></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -233,17 +219,150 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And i click on  fitness tracker smart watch</span>
-				<div class='pre'>Clicking on fitness tracker watch[[ChromeDriver: chrome on WINDOWS (6472674abe2a5d15a116f2fdc6f587e8)] -> xpath: //*[@id="content"]/div/div/div[3]/div/div/div[3]/ul/li[1]/div/div[1]/a/img]<br></div>
+			<span class="bdd-step-name">And i enter email address</span>
+				<div class='pre'>enter email address[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //input[@id='login']]<br></div>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node then pass' status='pass'>
+		<li test-id='7' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i enter password "Asdfgh123"</span>
+				<div class='pre'>enter password[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //input[@id='password']]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i enater confirm password "Asdfgh123"</span>
+				<div class='pre'>enter confirm password[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //input[@id='password-conf']]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i click on create button</span>
+				<div class='pre'>clicking on create button[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //span[contains(text(),'Create')]]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then i should be able to create account successfully</span>
+				<div class='pre'>get text from account successfully[[ChromeDriver: chrome on WINDOWS (d7f7fbe82e8b6af837964effeb050781)] -> xpath: //h1[@id='page-title']]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='11' status='pass'>
+	<span class='duration right label'>0h 0m 11s+499ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">as a user i should navigate to electronic page successfully</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='12' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given i am on home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i click on home tab</span>
+				<div class='pre'>Clicking on homePage tab[[ChromeDriver: chrome on WINDOWS (e20fd36577c4d31cb0b70702753fcf8c)] -> xpath: //*[@id="header-area"]/div[1]/div/div[4]/div/ul/li[1]/a/span]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i navigate to home page</span>
+				<div class='pre'>get text from home page successfully[[ChromeDriver: chrome on WINDOWS (e20fd36577c4d31cb0b70702753fcf8c)] -> xpath: //*[@id="content"]/div/div/div[2]/h1]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i click on electronic button</span>
+				<div class='pre'>Clicking on electronicButton[[ChromeDriver: chrome on WINDOWS (e20fd36577c4d31cb0b70702753fcf8c)] -> xpath: //span[contains(text(),'Electronics')]]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then i should navigate to electronic page</span>
+				<div class='pre'>Clicking on electronic button[[ChromeDriver: chrome on WINDOWS (e20fd36577c4d31cb0b70702753fcf8c)] -> xpath: //h1[@id='page-title']]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='17' status='pass'>
+	<span class='duration right label'>0h 0m 12s+377ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">as a user i should be able to purchase successfully</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='18' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given i am on home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then i click on new tab</span>
+				<div class='pre'>Clicking on new tab[[ChromeDriver: chrome on WINDOWS (87abd17f742ccacd5a19c72be6094bc3)] -> xpath: //*[@id="header-area"]/div[1]/div/div[4]/div/ul/li[4]/a/span]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i navigate to new arrivals page</span>
+				<div class='pre'>Get text from new arraivals tab[[ChromeDriver: chrome on WINDOWS (87abd17f742ccacd5a19c72be6094bc3)] -> xpath: //h1[@id='page-title']]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And i click on  fitness tracker smart watch</span>
+				<div class='pre'>Clicking on fitness tracker watch[[ChromeDriver: chrome on WINDOWS (87abd17f742ccacd5a19c72be6094bc3)] -> xpath: //*[@id="content"]/div/div/div[3]/div/div/div[3]/ul/li[1]/div/div[1]/a/img]<br></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then i should be bale to select watch successfully</span>
-				<div class='pre'>get text from fitness tracker smart watch[[ChromeDriver: chrome on WINDOWS (6472674abe2a5d15a116f2fdc6f587e8)] -> xpath: //h1[contains(text(),'Fitness Tracker Smart Watch')]]<br></div>
+				<div class='pre'>get text from fitness tracker smart watch[[ChromeDriver: chrome on WINDOWS (87abd17f742ccacd5a19c72be6094bc3)] -> xpath: //h1[contains(text(),'Fitness Tracker Smart Watch')]]<br></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -276,76 +395,6 @@
 
 </div>
 <!-- test view -->
-<div id='category-view' class='view hide'>
-
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Categories</h3>
-			<ul id='category-collection' class='category-collection'>
-				
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Smoke</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Dec 13, 2020 10:56:33 PM</td>
-										<td class='linked' test-id='2'>EndToEnd feature.as a user i should be able to purchase successfully</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
 <!-- category view -->
 <div id='author-view' class='view hide'>
     <section id='controls'>
@@ -375,12 +424,12 @@
                             <div class='author-heading'>
                                 <span class='author-name'>PrimeTesting</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label pass'>3</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label green accent-4 white-text'>Passed: 3</span>
                                     
                                     
                                 </div>
@@ -396,8 +445,18 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Dec 13, 2020 10:56:33 PM</td>
-                                                <td class='linked' test-id='2'>EndToEnd feature.as a user i should be able to purchase successfully</td>
+                                                <td>Dec 16, 2020 04:47:32 PM</td>
+                                                <td class='linked' test-id='2'>EndToEnd feature.as user i want create Account Successfully</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dec 16, 2020 04:47:47 PM</td>
+                                                <td class='linked' test-id='11'>EndToEnd feature.as a user i should navigate to electronic page successfully</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dec 16, 2020 04:48:00 PM</td>
+                                                <td class='linked' test-id='17'>EndToEnd feature.as a user i should be able to purchase successfully</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -409,12 +468,12 @@
                             <div class='author-heading'>
                                 <span class='author-name'>VarshaPatel</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label pass'>3</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label green accent-4 white-text'>Passed: 3</span>
                                     
                                     
                                 </div>
@@ -430,8 +489,18 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Dec 13, 2020 10:56:33 PM</td>
-                                                <td class='linked' test-id='2'>EndToEnd feature.as a user i should be able to purchase successfully</td>
+                                                <td>Dec 16, 2020 04:47:32 PM</td>
+                                                <td class='linked' test-id='2'>EndToEnd feature.as user i want create Account Successfully</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dec 16, 2020 04:47:47 PM</td>
+                                                <td class='linked' test-id='11'>EndToEnd feature.as a user i should navigate to electronic page successfully</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dec 16, 2020 04:48:00 PM</td>
+                                                <td class='linked' test-id='17'>EndToEnd feature.as a user i should be able to purchase successfully</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -465,31 +534,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 13, 2020 10:56:33 PM</div>
+					<div class='panel-lead'>Dec 16, 2020 04:47:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 13, 2020 10:56:50 PM</div>
+			 		<div class='panel-lead'>Dec 16, 2020 04:48:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>17,050ms</div>
+					<div class='panel-lead'>40,829ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -528,30 +597,6 @@
 					</table>
 				</div>
 			</div>
-			<div class='col s6'>
-				<div class='card-panel dashboard-categories'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Others</th>
-							<th>Passed %</th>
-						</tr>
-						<tr>
-							<td>@Smoke</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -570,7 +615,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -579,7 +624,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 5,
+				passGrandChild: 18,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
