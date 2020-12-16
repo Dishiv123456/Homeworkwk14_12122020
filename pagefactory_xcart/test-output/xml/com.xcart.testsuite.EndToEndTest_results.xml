@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Suite"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.090">
+  <properties />
+  
+  
+            <testcase name="userShouldAbleToPurchaseSuccessfully" time="5.249" classname="com.xcart.testsuite.EndToEndTest" />
+                <testcase name="userShouldNavigateToElectronicPageSuccessfully" time="4.779" classname="com.xcart.testsuite.EndToEndTest" />
+                <testcase name="userShouldNavigateToCreateAccountSuccessfully" time="7.062" classname="com.xcart.testsuite.EndToEndTest" />
+      
+</testsuite>
